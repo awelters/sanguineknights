@@ -1,0 +1,319 @@
+<html>
+    <head>
+        <title>Sanguine Knights</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="Sanguine Knights, Comic">
+        <meta name="description" content="The Sanguine Knights Comic Website">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta property="og:site_name" content="Sanguine Knights">
+        <meta property="og:description" content="The Sanguine Knights Comic Website">
+        <meta property="og:type" content="article">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <style>
+            p {
+            	font-family: "Times New Roman";
+            }
+            #background {
+            	width:100%;
+            	position:absolute;
+            	top:0;
+            	left: 0;
+            	background-image:url('img/background.jpg');
+            	background-repeat:no-repeat;
+
+            	background-position: -200px 0px;
+            }
+            #background-overlay {
+            	width:100%;
+            	position:absolute;
+            	top:0;
+            	left: 0;
+            	opacity:0.5;
+            	filter:alpha(opacity=50);
+            	background-color:black;
+            }
+            #background {
+            	height:1708px;
+            }
+            #background-overlay {
+            	height:1708px;
+            }
+
+            #lugal-mobile, #benjamin-mobile, #lugal, #benjamin {
+            	display:none;
+            }
+
+            .name {
+            	font-size: 18px;
+            }
+            p {
+            	font-size:14px;
+            }
+
+            #kickstarter-img {
+            	margin-bottom: 5px !important;
+            }
+
+            #kickstarter-img {
+            	max-width: 880px;
+            }
+
+            @media screen and (max-width: 1067px) {
+            	#header {
+            		margin-top:110px;
+            	}
+            	#sk {
+            		position:fixed;
+            		right:8px;
+            		top:120px;
+            	}
+            	#logo {
+            		position:fixed;
+            		right:15px;
+            		top:15px;
+            	}
+            	#content img {
+            		max-width:238px;
+            		max-height:238px;
+            	}
+            	#kickstarter-img {
+            		max-width: 360px !important;
+            	}
+
+            	#content div {
+            		max-width:93%;
+            	}
+
+            	#content div {
+            		margin-left:27px;
+            	}
+
+            	#lugal-mobile {clear:both; float:left; display:block;}
+            	#lugal-mobile p {float:right;margin-bottom:22px;}
+            	#lugal-mobile .name {text-align:left;}
+            	#lugal-mobile img {margin-top:8px;float:left;}
+
+            	#benjamin-mobile {clear:both; float:left; display:block;}
+            	#benjamin-mobile p {float:right;margin-bottom:22px;}
+            	#benjamin-mobile .name {text-align:left;}
+            	#benjamin-mobile img {float:left;}
+
+            	#container {
+            		width:100%;
+            	}
+            	#content {
+            		width: 100%;
+            	}
+            	#content div {
+            		max-width:80%;
+            	}
+
+            }
+
+            @media screen and (max-width: 885px) {
+            	#header {
+            		margin-top:110px;
+            	}
+            	#content img {
+            		max-width:188px;
+            		max-height:188px;
+            	}
+            	#content div {
+            		max-width:80%;
+            	}
+            }
+
+            @media screen and (max-width: 628px) {
+            	#background {
+            		height: 500px;
+            		background-position: -199px 0px;
+            	}
+            	#sk {
+            		top:100px;
+            		max-height:171px;
+            	}
+            	#logo {
+            		max-height:100px;
+            	}
+            	#content {
+            		padding-bottom:20px;
+            	}
+            	#content div {
+            		max-width: 75%;
+            	}
+            	#content img {
+            		max-width:100%;
+            		max-height:100%;
+            	}
+            	.name {
+            		font-size: 24px;
+            		padding-bottom: 12px;
+            	}
+            	p {line-height:18px; font-size:16px;}
+            }
+
+            @media screen and (max-width: 560px) {
+            	#header {
+            		margin-top:15px;
+            	}
+            	#background {
+            		background-position: -725px 0px;
+            	}
+
+            	#kickstarter-img {
+            		max-width: 270px !important;
+            		padding-bottom: 5px;
+            	}
+            }
+
+            @media screen and (max-width: 420px) {
+            	#content div {
+            		max-width: 60%;
+            	}
+            }
+
+            @media screen and (max-width: 320px) {
+            	#kickstarter-img {
+            		max-width: 200px !important;
+            	}
+            }
+
+            @media screen and (min-width: 1068px) {
+            	#header {
+            		margin-top:115px;
+            	}
+            	#sk {
+            		position:fixed;
+            		right:8px;
+            		top:-12px;
+            	}
+            	#logo {
+            		position:fixed;
+            		right:92px;
+            		top:30px;
+            	}
+            	#jackson {float:left;}
+            	#jackson img {float:left;}
+            	#jackson p {float:left; width:531px; margin-left:40px; text-align:justify;}
+            	#jackson .name {text-align:left;}
+
+            	#lugal {clear:both; float:right; display:block;}
+            	#lugal p {float:left; width:621px; margin-right:40px; text-align:justify;}
+            	#lugal .name {text-align:right;}
+            	#lugal img {float:left;}
+
+            	#isaac {clear:both; float:left;}
+            	#isaac img {float:left;}
+            	#isaac p {float:left; width:490px; margin-left:40px; text-align:justify;}
+            	#isaac .name {text-align:left;}
+
+            	#benjamin {clear:both; float:right; display:block;}
+            	#benjamin p {float:left; width:594px; margin-right:40px; text-align:justify;}
+            	#benjamin .name {text-align:right;}
+            	#benjamin img {float:left;}
+
+            	#suzy {clear:both; float:left;}
+            	#suzy img {float:left;}
+            	#suzy p {float:left; width:817px; margin-left:40px; text-align:justify;}
+            	#suzy .name {text-align:left;}
+
+            	#container {
+            		width:1024px;
+            	}
+            	#content {
+            		width: 1024px;
+            	}
+            	.name {
+            		font-size: 24px;
+            		padding-bottom: 12px;
+            	}
+            	p {line-height:28px; font-size:16px;}
+            }
+
+            @media screen and (min-width: 1200px) {
+            	#background {
+            		background-position: center 0px;
+            	}
+
+            	#sk {
+            		position:fixed;
+            		right:8px;
+            		top:120px;
+            	}
+            	#logo {
+            		position:fixed;
+            		right:15px;
+            		top:15px;
+            	}
+            }
+
+            #container {
+            	margin-left:auto;
+            	margin-right:auto;
+            	position:relative;
+            	top:0px;
+            	left:0px;
+            }
+
+            #content {
+            	margin-left:auto;
+            	margin-right:auto;
+            }
+
+            #content div {
+            	padding-top: 8px;
+            	width:100%;
+            }
+            .name {
+            	display:block;
+            	font-weight: bold;
+            }
+            p {margin:0; padding:0; color:white; margin-top:22px;}
+        </style>
+    </head>
+    <body style="width:100%; margin:0;padding:0;background-color:black;">
+        <div id="background"></div>
+        <div id="background-overlay"></div>
+        <div id="container">
+        	<div id="header">
+        		<img id="sk" src="img/sk.png" alt="SK" title="SK">
+        		<img id="logo" src="img/logo.png" alt="SK" title="SK">
+        	</div>
+        	<div id="content">
+        		<div>
+        			<a id="kickstarter-link" href="https://www.kickstarter.com/projects/shadowfoxmedia/470553716"><img id="kickstarter-img" src="img/kickstarter-logo-dark.png" title="Pledge on Kickstarter"></a>
+        		</div>
+        		<div id="jackson">
+        			<img src="img/jackson.jpg" alt="Jackson Temple" title="Jackson Temple">
+        			<p><span class="name">Jackson Temple</span>Half man half machine Jackson Temple lives in Outpost 12, the ruins of a once great city. He scavenges the wastes fixing what he can trying to reclaim the lost wonders of a dead world. His gift with machines was passed to him from his father. His troubled past and the loss of his family have shaped a hardened soul waiting for revenge. Jackson is second generation outpost dweller, he was born in the outposts, and has never known anything else. A man on the edge, one small nudge and he may lose control....</p>
+        		</div>
+        		<div id="lugal">
+        			<p><span class="name">Lugal</span>One of the most feared warriors of the vampire nation. He is the right hand of Dracula himself. His victims do not know his name but when they see him their fate has been sealed. A fierce warrior with a keen intellect, and undeniable presence. Unlike most who are turned he retains his thoughts and wit. He has no memory of his life prior to his vampiric rebirth, all he knows is that he serves the masters will.  Cruel and calculating he travels to outpost 12 to retrieve what was stolen....</p>
+        			<img src="img/lugal.jpg" alt="Lugal" title="Lugal">
+        		</div>
+        		<div id="lugal-mobile">
+        			<img src="img/lugal.jpg" alt="Lugal" title="Lugal">
+        			<p><span class="name">Lugal</span>One of the most feared warriors of the vampire nation. He is the right hand of Dracula himself. His victims do not know his name but when they see him their fate has been sealed. A fierce warrior with a keen intellect, and undeniable presence. Unlike most who are turned he retains his thoughts and wit. He has no memory of his life prior to his vampiric rebirth, all he knows is that he serves the masters will.  Cruel and calculating he travels to outpost 12 to retrieve what was stolen....</p>
+        		</div>
+        		<div id="isaac">
+        			<img src="img/isaac-2.jpg" alt="Saint Isaac" title="Saint Isaac">
+        			<p><span class="name">“Saint” Isaac the Prophet</span>Shunned from his home, for a heinous crime, Isaac wanders the land preaching and studying the old worlds religions and tomes. Whether he is a wise man, or a lunatic is of much debate. Little is known of his origins or his whereabouts for the last few years, only that he arrived in outpost 12 a month ago. Every night since he has stood in the streets preaching the doom of mankind. His own secrets haunt him in his sleep. He knows the long night is coming.</p>
+        		</div>
+        		<div id="benjamin">
+        			<p><span class="name">Benjamin “Doc” Carter</span>Benjamin is a man of many talents and few morals. This has served him well and saved many lives...and lost a few along the way. He found a purpose alongside his best friend Hank, they worked night and day to find a solution to the vampire plague. After the death of hank at the hands of those demons he withdrew farther into his experiments.  Called a madman for his controversial medical procedures, he finally left the surface world...Outpost 12 may need Doc’s madness if it is to survive.</p>
+        			<img src="img/benjamin.jpg" alt="Benjamin Carter" title="Benjamin Carter">
+        		</div>
+        		<div id="benjamin-mobile">
+        			<img src="img/benjamin.jpg" alt="Benjamin Carter" title="Benjamin Carter">
+        			<p><span class="name">Benjamin “Doc” Carter</span>Benjamin is a man of many talents and few morals. This has served him well and saved many lives...and lost a few along the way. He found a purpose alongside his best friend Hank, they worked night and day to find a solution to the vampire plague. After the death of hank at the hands of those demons he withdrew farther into his experiments.  Called a madman for his controversial medical procedures, he finally left the surface world...Outpost 12 may need Doc’s madness if it is to survive.</p>
+        		</div>
+        		<div id="suzy">
+        			<img src="img/suzy-2.jpg" alt="Suzy" title="Suzy">
+        			<p><span class="name">Susan Ann Janus</span>Suzy was born in outpost twelve. She is the last of five siblings the rest have either died or been turned. She operates a small food shop in outpost twelve. She has become close with Jackson Temple, they often go scouting in the wastes together. She is a crack shot with a bow, and a great survivalist. Her hopes and dreams, if one is to be allowed such things in this world, are simple. She wishes to move to the north to find wilderness untouched by the vampire scourge. Her fate unknown to her rests with a mysterious traveler....</p>
+        		</div>
+        	</div>
+        </div>
+    </body>
+</html>
